@@ -59,6 +59,7 @@ def config():
 
 @app.route('/token', methods=['GET'])
 def randomToken():
+    # print(fake.user_name())
     return generateToken(fake.user_name())
 
 
@@ -67,6 +68,7 @@ def createToken():
     # Get the request json or form data
     content = request.get_json() or request.form
     # get the identity from the request, or make one up
+    print(fake.user_name())
     identity = content.get('identity', fake.user_name())
     return generateToken(identity)
 

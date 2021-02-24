@@ -79,7 +79,7 @@ target/
 celerybeat-schedule
 
 # dotenv
-.env
+*.env
 
 # virtualenv
 venv/
@@ -94,3 +94,6 @@ ENV/
 # Docker
 Dockerfile
 .dockerignore
+
+#notebooks
+*.ipynb
